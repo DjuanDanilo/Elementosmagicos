@@ -1,1 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/*Fundo da página*/
+body {
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #557ba7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Título principal */
+h1 {
+    font-size: 2.5rem;
+    color: #222831;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 500px; 
+}
+
+/* Barra de pesquisa */
+section input {
+    width: 100%; 
+    max-width: 400px;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #45474B;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Botão de pesquisa */
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #30475E;
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Caixa de resultados */
+.resultados-pesquisa {
+    width: 100%;
+    max-width: 500px; 
+    height: 60vh; 
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Imagem do produto */
+.imagem-produto {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+/* Título do item */
+.item-resultado h2 {
+    font-size: 1.2rem;
+    color: #222831;
+}
+
+/* Links */
+.item-resultado a {
+    text-decoration: none;
+    color: #30475E;
+}
+
+.item-resultado a:hover {
+    text-decoration: underline;
+}
+
+/* Descrição do item */
+.descricao-meta {
+    color: #45474B;
+    margin: 0.5rem 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #F5F7F8;
+    color: #45474B;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    font-size: 1rem;
+    bottom: 0;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    section input {
+        width: 90%; 
+        max-width: 100%;
+    }
+
+    .resultados-pesquisa {
+        width: 90%; 
+        max-width: 100%;
+        height: 50vh; 
+    }
+
+    .imagem-produto {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .item-resultado h2 {
+        font-size: 1rem; 
+    }
+
+    footer {
+        font-size: 0.9rem; 
+    }
+}
+
+/* Responsividade para telas muito pequenas (como smartphones menores) */
+@media (max-width: 480px) {
+    .item-resultado {
+        padding: 0.8rem;
+    }
+
+    .imagem-produto {
+        width: 80px;
+        height: 80px;
+    }
+
+    .item-resultado h2 {
+        font-size: 1rem;
+    }
+
+    section button {
+        padding: 0.8rem 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
