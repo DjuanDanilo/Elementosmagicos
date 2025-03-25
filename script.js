@@ -14,7 +14,7 @@ function gerarResultados(dados) {
     }
 
     if (!resultados) {
-        resultados = "<p>Resultado não Encontrado</p>";
+        resultados = "<p>Não vendemos esse tipo de pergaminho aqui!</p>";
     }
 
     section.innerHTML = resultados;
